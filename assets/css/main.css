@@ -240,6 +240,10 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.pilot-arch {
+		width: 100%;
+		height: auto;
+	}
 /* Container */
 
 	.container {
@@ -3043,6 +3047,7 @@ input, select, textarea {
 
 		#header h1 {
 			margin: 0;
+			margin-bottom: 1rem;
 		}
 
 		#header p {
@@ -3264,6 +3269,24 @@ input, select, textarea {
 					padding: 0;
 				}
 
+	#profile {
+		display: flex;
+		justify-content: center;
+	}
+
+	#profile-left {
+		width: 30%;
+		height: 80%;
+	}
+
+	#profile-right {
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+		align-items: center;
+		justify-content: flex-start;
+		padding-top: 3em;
+	}
 /* XLarge */
 
 	@media screen and (max-width: 1680px) {
@@ -3280,6 +3303,25 @@ input, select, textarea {
 				padding: 12em 0 6em 0 ;
 			}
 
+			#profile {
+				display: flex;
+				/* padding: 0 6em 0 3em; */
+				justify-content: center;
+			}
+		
+			#profile-left {
+				width: 30%;
+				height: 80%;
+			}
+		
+			#profile-right {
+				display: flex;
+				flex-direction: column;
+				width: 40%;
+				align-items: center;
+				justify-content: flex-start;
+				padding-top: 3em;
+			}
 	}
 
 /* Large */
@@ -3334,6 +3376,30 @@ input, select, textarea {
 			#footer {
 				padding: 4em 0 4em 0 ;
 				background-attachment: scroll;
+			}
+
+			#profile {
+				display: flex;
+				/* padding: 0 6em 0 3em; */
+				justify-content: center;
+			}
+		
+			#profile-left {
+				width: 30%;
+				height: 80%;
+			}
+		
+			#profile-pic {
+				width: 100%;
+				height: auto;
+			}
+			#profile-right {
+				display: flex;
+				flex-direction: column;
+				width: 40%;
+				align-items: center;
+				justify-content: flex-start;
+				padding-top: 3em;
 			}
 
 	}
@@ -3565,26 +3631,6 @@ input, select, textarea {
 
 	.pilot {
 		font-style: normal;
-	}
-
-	#profile {
-		display: flex;
-		padding: 0 6em 0 3em;
-		justify-content: center;
-	}
-
-	#profile-left {
-		width: 30%;
-		height: 80%;
-	}
-
-	#profile-right {
-		display: flex;
-		flex-direction: column;
-		width: 40%;
-		align-items: center;
-		justify-content: flex-start;
-		padding-top: 3em;
 	}
 
 	#bio {
