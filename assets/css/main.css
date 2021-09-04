@@ -3094,7 +3094,7 @@ input, select, textarea {
 			opacity: 1;
 			position: relative;
 			z-index: 1;
-			height: 60vh;
+			/* height: 60vh; */
 		}
 
 			#header .inner .actions {
