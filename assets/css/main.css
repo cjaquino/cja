@@ -3441,9 +3441,29 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 8em 3em 8em 3em ;
+				padding: 6em 0 3em 0 ;
 			}
 
+			#name-nav {
+				font-size: 1.2rem;
+			}
+	
+			#bio {
+				font-size: 1.5rem;
+			}
+
+			#profile {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			#profile-right {
+				padding: 0;
+				width: 80%;
+			}
+	
 		/* Footer */
 
 			#footer {
@@ -3535,9 +3555,18 @@ input, select, textarea {
 				padding: 4em 3em 4em 3em ;
 			}
 
-				#header .actions {
-					margin: 2em 0 0 0;
-				}
+			#header .actions {
+				margin: 2em 0 0 0;
+			}
+
+			#profile-left {
+				width: 80%;
+			}
+
+			#profile-pic {
+				width: 60%;
+				margin-bottom: 1em;
+			}
 
 		/* Footer */
 
@@ -3656,39 +3685,6 @@ input, select, textarea {
 		margin: 0 1%;
 	}
 
-	@media screen and (max-width: 1000px) {
-
-		#name-nav {
-			font-size: 1.2rem;
-		}
-
-		#bio {
-			font-size: 1.5rem;
-		}
-
-		#header {
-			padding: 6em 0 6em 0 ;
-		}
-
-	}
-
-	@media screen and (max-width: 850px) {
-
-		#name-nav {
-			font-size: 1rem;
-			/* display: block; */
-			/* width: 100% */
-		}
-
-		#profile {
-
-		}
-		#bio {
-			font-size: 1.2rem;
-		}
-
-	}
-
 	@media screen and (max-width: 700px) {
 
 		#name-nav {
@@ -3710,11 +3706,4 @@ input, select, textarea {
 			justify-content: center;
 		}
 
-	}
-
-	@media screen and (max-width: 500px) {
-
-		#profile {
-			width: 60%;
-		}
 	}
